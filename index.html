@@ -14,25 +14,62 @@
         }
         h1 {
             color: #2c3e50;
+            margin-bottom: 30px;
         }
-        p {
+        .file-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .file-item {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .file-item a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
             font-size: 18px;
         }
-        .box {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            display: inline-block;
-            margin-top: 20px;
+        .file-item a:hover {
+            color: #2980b9;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>Welcome to Surgery Q-Bank</h1>
-        <p>الموقع شغال يا ريناد! 🎉</p>
-        <p>هنا هنعرض ملفات الأسئلة قريباً.</p>
+    <h1>بنك أسئلة الجراحة - Surgery Q-Bank</h1>
+    <div class="file-list">
+        <!-- هنا هنحط روابط الملفات -->
+        <div class="file-item">
+            <span>MCQ Breast 2 محلول</span>
+            <a href="MCQ%20Breast%202%20محلول.pdf" target="_blank">فتح الملف</a>
+        </div>
+        <div class="file-item">
+            <span>Formatives from the previous year 1</span>
+            <a href="Formatives%20from%20the%20previous%20year%201.pdf" target="_blank">فتح الملف</a>
+        </div>
+        <div class="file-item">
+            <span>الملف المرفق (3)</span>
+            <a href="(3)%20الملف%20المرفق.pdf" target="_blank">فتح الملف</a>
+        </div>
+        <div class="file-item">
+            <span>End module 2024 General Surgery</span>
+            <a href="End%20module%202024%20General%20Surgery%20by%20Organizing%20Team%202.pdf" target="_blank">فتح الملف</a>
+        </div>
+        <div class="file-item">
+            <span>Salivary glands MCQs 1 محلول</span>
+            <a href="Salivary%20glands%20MCQs%201%20محلول.pdf" target="_blank">فتح الملف</a>
+        </div>
     </div>
 </body>
 </html>
